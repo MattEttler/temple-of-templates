@@ -54,3 +54,4 @@ The software-delivery standard is like a party planner for your projects! It pro
     - Define service level agreement (SLA) requirements for uptime and response times based on customer needs.  
   - Scalability & Performance  
     - Implement proper load balancing algorithms to ensure scalability and performance when dealing with large amounts of traffic. Additionally, use caching mechanisms to reduce latency and optimize performance.
+- [12 Factor Checklist](./12_factor_checklist.md)
