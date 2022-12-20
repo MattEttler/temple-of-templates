@@ -21,7 +21,7 @@ The software-delivery standard is like a party planner for your projects! It pro
 
 ##### C4 System View (systems to systems)  
 
-###### _What is the current system architecture and how will the new solution fit into it?_
+###### _"A software system is the highest level of abstraction and describes something that delivers value to its users, whether they are human or not. This includes the software system you are modelling, and the other software systems upon which your software system depends (or vice versa). In many cases, a software system is "owned by" a single software development team."_ [c4model.com](https://c4model.com/#SystemContextDiagram)
 
 ```mermaid
     flowchart TD
@@ -32,7 +32,7 @@ The software-delivery standard is like a party planner for your projects! It pro
 
 ##### C4 Container View (components to components, within the system)  
 
-###### _What are the key components of the solution and how do they interact?_
+###### _" container is essentially a context or boundary inside which some code is executed or some data is stored. And each container is a separately deployable/runnable thing or runtime environment, typically (but not always) running in its own process space. Because of this, communication between containers typically takes the form of an inter-process communication."_ [c4model.com](https://c4model.com/#ContainerDiagram)
 
 ```mermaid
     flowchart TD
