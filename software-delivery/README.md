@@ -5,21 +5,21 @@ The software-delivery standard is like a party planner for your projects! It pro
 
 ### Design Doc
 
-  ###### _A one-pager dedicated to answering most questions about the service that can be answered without diving into the code itself._ 
+###### _A one-pager dedicated to answering most questions about the service that can be answered without diving into the code itself._ 
 
 #### Summary
 
-  ###### _a breif intended to provide an overview of the project for both business and technical audiences._  
+###### _a breif intended to provide an overview of the project for both business and technical audiences._  
 
 ##### Business Opportunity
 
-  ###### _What is prompting this._
+###### _What is prompting this._
 
 ##### Solution summary
 
 ###### _a brief overview of the response to the business opportunity. Should call out primary dependencies._  
   - C4 System View (systems to systems)  
-    ###### _What is the current system architecture and how will the new solution fit into it?_
+###### _What is the current system architecture and how will the new solution fit into it?_
 ```mermaid
     flowchart TD
       BankingCustomer[Banking Customer] -->|uses| InternetBankingSystem[Internet Banking System]
@@ -27,7 +27,7 @@ The software-delivery standard is like a party planner for your projects! It pro
       InternetBankingSystem -->|Sends emails| EmailSystem
 ```
   - C4 Container View (components to components, within the system)  
-    ###### _What are the key components of the solution and how do they interact?_
+###### _What are the key components of the solution and how do they interact?_
 ```mermaid
     flowchart TD
       BankingCustomer[Banking Customer]
@@ -45,9 +45,9 @@ The software-delivery standard is like a party planner for your projects! It pro
 ```
 - Disaster Recovery Strategy
   - [ ] Active-Passive  
-    ###### Implement redundant active servers with a single passive server in order to protect against outages. When an active server fails, the passive server can be promoted to active status and take over the load.  
+###### Implement redundant active servers with a single passive server in order to protect against outages. When an active server fails, the passive server can be promoted to active status and take over the load.  
   - [ ] Active-Active  
-    ###### Utilize two or more active servers with each one in a different data center and configured to handle the same workload. This ensures that if one data center fails, the other can pick up the slack without any downtime.  
+###### Utilize two or more active servers with each one in a different data center and configured to handle the same workload. This ensures that if one data center fails, the other can pick up the slack without any downtime.  
 
 - High Availability Strategy  
   - Availability Requirements  
