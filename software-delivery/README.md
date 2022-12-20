@@ -18,16 +18,22 @@ The software-delivery standard is like a party planner for your projects! It pro
 ##### Solution summary
 
 ###### _a brief overview of the response to the business opportunity. Should call out primary dependencies._  
-  - C4 System View (systems to systems)  
+
+##### C4 System View (systems to systems)  
+
 ###### _What is the current system architecture and how will the new solution fit into it?_
+
 ```mermaid
     flowchart TD
       BankingCustomer[Banking Customer] -->|uses| InternetBankingSystem[Internet Banking System]
       EmailSystem[Email System] -->|Sends emails to| BankingCustomer
       InternetBankingSystem -->|Sends emails| EmailSystem
 ```
-  - C4 Container View (components to components, within the system)  
+
+##### C4 Container View (components to components, within the system)  
+
 ###### _What are the key components of the solution and how do they interact?_
+
 ```mermaid
     flowchart TD
       BankingCustomer[Banking Customer]
@@ -43,15 +49,18 @@ The software-delivery standard is like a party planner for your projects! It pro
       API -->|reads to and writes from| DB
       API -->|sends email using| EmailSystem
 ```
-- Disaster Recovery Strategy
+
+##### Disaster Recovery Strategy
   - [ ] Active-Passive  
+
 ###### Implement redundant active servers with a single passive server in order to protect against outages. When an active server fails, the passive server can be promoted to active status and take over the load.  
   - [ ] Active-Active  
+
 ###### Utilize two or more active servers with each one in a different data center and configured to handle the same workload. This ensures that if one data center fails, the other can pick up the slack without any downtime.  
 
-- High Availability Strategy  
+##### High Availability Strategy  
   - Availability Requirements  
     - Define service level agreement (SLA) requirements for uptime and response times based on customer needs.  
   - Scalability & Performance  
     - Implement proper load balancing algorithms to ensure scalability and performance when dealing with large amounts of traffic. Additionally, use caching mechanisms to reduce latency and optimize performance.
-- [12 Factor Checklist](./12_factor_checklist.md)
+##### [12 Factor Checklist](./12_factor_checklist.md)
