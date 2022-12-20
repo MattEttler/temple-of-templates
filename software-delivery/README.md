@@ -1,5 +1,5 @@
 # Overview
-The software-delivery standard is like a party planner for your projects! It provides a simple and straightforward way for you to design, develop, and track projects. Plus, it ensures you have the most up-to-date information, so you never have to worry about missing out on the latest and greatest. With the architecture standard, you can stay on top of your projects and never miss a beat!
+The software-delivery standard is like a party planner for your projects! It provides a simple and straightforward way for you to [design](#architecture), develop, and track projects. Plus, it ensures you have the most up-to-date information, so you never have to worry about missing out on the latest and greatest. With the architecture standard, you can stay on top of your projects and never miss a beat!
 
 ## Architecture
 
